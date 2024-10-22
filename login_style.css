@@ -1,0 +1,24 @@
+h1{
+    font-size: xxx-large;
+    color:white;
+    
+}
+body{
+    background-image: url(newbg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+form{
+    color:white ;
+    font-size: xx-large;
+}
+.frame{
+    background-color: rgb(5, 5, 5,0.8);
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    display: inline-block;
+    border-radius: 40px;
+    border: 5px solid white;
+}

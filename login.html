@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XYZ Pharmacy</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body><div class="frame">
+   <h1><center><b>Welcome to XYZ Pharmacy</b></center></h1>
+    <form id="login_form"><center><b>
+        
+        User Name<br>
+        <input type="text" name="username" placeholder="Enter Username" style="width: 250px; height: 30px; " id="username" required><br><br>
+        
+        Password<br>
+        <input type="password" name="password" placeholder="Enter password" style="width: 250px; height: 30px;" id="psw" required><br><br>
+        
+        <input type="submit" value="LOGIN" style="height: 40px;width: 100px;" id="submitbtn"><br><br>
+        </center></b>
+        </form>
+        </div>
+        <script>
+            const loginForm = document.getElementById("login_form");
+            const loginButton = document.getElementById("submitbtn");
+            loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "admin" && password === "123") {
+        window.open("home.html");
+    } else {
+        alert("Wrong User Name or Password Please Try Again!!!")
+    }
+})
+        </script>
+</body>
+</html>

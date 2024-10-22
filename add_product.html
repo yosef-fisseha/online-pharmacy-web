@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="add_product_style.css">
+
+</head>
+<body>
+  <div class="logo">
+    <h1>XYZ Pharmacy</h1>
+    <br><br>
+  </div>
+<div class="navbar" id="mynavbar">
+
+  <a href="Home.html">HOME</a>
+  <a href="http://localhost/ip/List.php">DISPLAY</a>
+  <div class="dropdown">
+    <button class="dropbtn">CUSTOMIZE 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-list">
+      <a href="add_product.html">ADD PRODUCT</a>
+      <a href="http://localhost/ip/List.php">LIST ALL PRODUCTS(Remove and Update)</a>
+    </div>
+  </div> 
+  <a href="login.html" class="ri">Log Out</a>
+</div><br>
+<div class="frame">
+<h2 style="color: white;"><center>To Add a Product Pleace fill the folowing boxes down below</center></h2>
+<hr>
+<form action="http://localhost/ip/add_product.php" method="post"><center>
+
+<label for="prod_name">Product Name</label><br>
+<input type="text" name="prod_name" id="prod_name" required/><br><br>
+
+<label for="prod_date">Production Date</label><br>
+<input type="date" name="prod_date" id="prod_date" required/><br><br>
+
+<label for="exp_date">Expire Date</label><br>
+<input type="date" name="exp_date" id="exp_date" required/><br><br>
+
+<label for="country">Country</label><br>
+<input type="text" name="country" id="country" required/><br><br>
+
+<label for="quantity">Quantity</label><br>
+<input type="number" name="quantity" id="quantity" required/><br><br>
+
+<label for="price">Price</label><br>
+<input type="number" name="price" id="price" required/><br><br>
+
+<input type="submit" name="submit" id="submit" /><br><br>
+</form></center> 
+
+</body>
+
+
+</html>
